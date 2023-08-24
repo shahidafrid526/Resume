@@ -1,61 +1,45 @@
-// projects
-let game = document.getElementById('projects');
-game.style.display='none';
+let porfolio = document.querySelector("#porfolio");
+let projects = document.querySelector("#all-projects");
+let education = document.querySelector("#Education");
+let certifications = document.querySelector("#Certifications");
+let skills = document.querySelector("#skills");
 
-//eduction
-
-let education = document.getElementById('eduction-card');
-education.style.display='none';
-
-//skills
-let skills = document.getElementById('skills-container');
-skills.style.display='none';
-
-//certificates
-let certificates = document.getElementById('certificates');
-certificates.style.display='none';
-
-let porfolio = document.getElementById('porfolio');
-
-function showPorfolio(){
-    game.style.display='none';
-    certificates.style.display='none';
-    education.style.display='none';
-    skills.style.display='none';
-    porfolio.style.display='block';
+function showPorfolio() {
+  projects.style.display = "none";
+  porfolio.style.display = "block";
+  education.style.display = "none";
+  certifications.style.display = "none";
+  skills.style.display = "none";
 }
 
-function showPorjects(){
-    game.style.display='block';
-    certificates.style.display='none';
-    education.style.display='none';
-    skills.style.display='none';
-    porfolio.style.display='none';
+function showProjects() {
+  projects.style.display = "flex";
+  porfolio.style.display = "none";
+  education.style.display = "none";
+  certifications.style.display = "none";
+  skills.style.display = "none";
 }
 
-function showEducation(){
-    game.style.display='none';
-    certificates.style.display='none';
-    education.style.display='block';
-    skills.style.display='none';
-    porfolio.style.display='none';
-    education.style.transition = 'all 0.9s ease-in-out';
+function showEducation() {
+  projects.style.display = "none";
+  porfolio.style.display = "none";
+  education.style.display = "block";
+  certifications.style.display = "none";
+  skills.style.display = "none";
 }
 
-function showSkills(){
-    game.style.display='none';
-    certificates.style.display='none';
-    education.style.display='none';
-    skills.style.display='block';
-    porfolio.style.display='none';
-    skills.style.transition = 'all 0.9s ease-in-out';
+function showCertifications() {
+  projects.style.display = "none";
+  porfolio.style.display = "none";
+  education.style.display = "none";
+  certifications.style.display = "flex";
+  skills.style.display = "none";
 }
 
-function showCertifications(){
-    game.style.display='none';
-    certificates.style.display='block';
-    education.style.display='none';
-    skills.style.display='none';
-    porfolio.style.display='none';
-    certificates.style.transition = 'all 0.9s ease-in-out';
+function showSkills() {
+  projects.style.display = "none";
+  porfolio.style.display = "none";
+  education.style.display = "none";
+  certifications.style.display = "none";
+  skills.style.display = "flex";
 }
